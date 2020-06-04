@@ -1,0 +1,272 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- sur_name
+- praise
+- greet
+- name
+- conversation_end
+- grade_school_offer
+- co_ed
+- teacher_ratio
+- school_uniform_policy
+- why_to_choose
+- activites
+- out_of_scope
+- diverse_community
+- parent_involvement
+- success_preparation
+- apply
+- tution_fee
+- deadline
+- financial_aid
+- operational_hours
+- partial_day
+- meals
+- operational_dates
+- accomodation
+- security
+- enrollment_admission_period
+- educational_level
+- summer_program
+- progress
+- help_students_to_adjust
+- culture
+- choice
+- internation_vs_internation
+- admission_process_test
+- school_financial_status
+- cafeteria
+- nonveg
+- admission
+- For_grade
+- for_age
+- ask_name
+- gender
+- phone_no
+entities:
+- surname
+- GRADE
+- age
+- GENDER
+- phone
+- name_er
+slots:
+  GENDER:
+    type: unfeaturized
+  GRADE:
+    type: unfeaturized
+  age:
+    type: unfeaturized
+  name_er:
+    type: unfeaturized
+  phone:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  surname:
+    type: unfeaturized
+responses:
+  utter_ask_surname:
+  - text: what is applicants Last Name?
+  utter_praise:
+  - text: My pleasure.
+  - text: Welcome.
+  utter_ask_name_er:
+  - text: what is the applicants First Name?
+  utter_greet:
+  - text: Hi, I am Ira, I am here to answer your any query related to our school.?
+  utter_conversation_end:
+  - text: Bye..!
+  utter_activites:
+  - text: Extracurricular activities "include arts, athletics, clubs, employment,
+      personal commitments, and other pursuits."
+  utter_grade_school_offer:
+  - text: 'The school offers form 1st std to 10 std '
+  utter_co_ed:
+  - text: yes the school is co-ed
+  utter_teacher_ratio:
+  - text: the student teacher ratio is 10:2
+  utter_school_uniform_policy:
+  - text: odd days uniform else cauals allowed
+  utter_diverse_community:
+  - text: understanding each student brings unique experiences, strengths, and ideas
+      to our classroom … Diversity is the exploration and incorporation of these differences
+      to enrich learning in our classroom.
+  utter_parent_involvement:
+  - text: ' Provide opportunities for parents to connect with the school. Volunteer
+      shifts, class activities, or parent-teacher committees are all great engagement
+      opportunities. Share your classroom goals or expectations openly with parents,
+      and ask them to do the same. Connect with parents in-person as much as possible.'
+  utter_success_preparation:
+  - text: schools choose to make small-scale changes to their curriculum to help prepare
+      students for the future, the transition between college and career will be far
+      less intimidating.
+  utter_apply:
+  - text: Mostly the adminssion process starts in  January. check for the bellow.
+    buttons:
+    - title: I would like to enroll in your school.
+      payload: I would like to enroll in your school.
+  utter_tution_fee:
+  - text: Our researchers found that the average cost of college for the 2017–2018
+      school year was $20,770 for public schools (in-state) and $46,950 for nonprofit
+      private schools, only including tuition, fees, and room and board.
+  utter_dead_line:
+  - text: Not really. colleges normally start to read applications at the same day
+      for regular decision applicants. unless you are apply early decision, no benefit
+      to submit ahead of the deadline.
+  utter_financial_aid:
+  - text: There are main types of financial aid for college students including grants,
+      scholarships, loans, and work-study funds. Students have the ability to pursue
+      one or more of these options to help cover the cost of their education.
+  utter_operational_hours:
+  - text: 'The average school day is between 6 and 7 hours per day, usually from around
+      8:00 am until somewhere around 2:00 pm. '
+  utter_partial_day:
+  - text: 7:15 a.m. start schools dismiss at 11:15 a.m. for half-day
+  utter_meals:
+  - text: 'Children from families with incomes at or below 130% of the poverty level
+      are eligible for free school meals. Those with incomes between 130% and 185%
+      of the poverty level are eligible for reduced price meals '
+  utter_operational_dates:
+  - text: 'While state requirements vary on the number of instructional days and/or
+      hours in the school year, the majority of states require 180 days of student
+      instruction. '
+  utter_accomodation:
+  - text: In the sample of studies, child-teacher ratios ranged from 5 to 1 to 15
+      to 1, with an average of around 9 to 1. Class sizes ranged from 11 to 25 children,
+      with an average class size of about 17.
+  utter_security:
+  - text: ' Ensure that school property is well lit. Appoint guards at outside doors,
+      and designate separate doors for entering and exiting buildings. Also, install
+      cameras and intercoms at these locations'
+  utter_enrollment_admission_period:
+  - text: ' there a specific enrollment period form jan-feb'
+  utter_educational_level:
+  - text: "A bachelor's degree is the minimum requirement for obtaining a teaching\
+      \  degree "
+  utter_summer_program:
+  - text: Yes , we have summer programs
+  utter_progess:
+  - text: Empower parents by creating a parent-teacher group. This will promote open
+      communication and understanding between parents and school staff.
+  utter_help_students_to_adjust:
+  - text: Parents can be supportive by demonstrating study and organization skills,
+      explaining a tricky problem, or just encouraging kids to take a break. ... Attend
+      school events, such as parent-teacher conferences, to meet your child's teachers.
+      Ask about their homework policies and how you should be involved.
+  utter_culture:
+  - text: Yes we have incuded culture and history in syllabus
+  utter_choice:
+  - text: A great international school should have excellent support systems and staff.
+      Support staff are available to aid students in need and to work collaboratively
+      with faculty, parents and students to develop programmes that meet the individual
+      needs of each student.
+  utter_internation_vs_internation:
+  - text: International schools are generally fee-paying and keep class sizes small;
+      typically no more than 20 students. ... As a result, most local students attending
+      international schools are very motivated and want to learn.
+  utter_school_financial_status:
+  - text: An International school is a school that promotes international education,
+      in an international environment, either by adopting a curriculum such as that
+      of the International Baccalaureate, Edexcel or Cambridge International Examinations
+      or by following a national curriculum different from that of the school's country
+  utter_cafeteria:
+  - text: yes,  Breakfast programs shall be offered at no cost to the students in
+      schools in which 80% or more of the students enrolled are eligible for free
+      or reduced-price meals.
+  utter_nonveg:
+  - text: yes no restrictions on nonveg
+  utter_admission_process_test:
+  - text: initial test are taken for sorting out the students.
+  utter_why_to_choose:
+  - text: Because our school is one of the reputated schools in the area, and i think
+      it is best for your kids future
+  utter_name_bot:
+  - text: I am Ira.
+  - text: you can call me Ira.
+  utter_ask_age:
+  - text: Ok. Please provide applicants age?
+  utter_ask_phone:
+  - text: Ok. Please provide me your phone number?
+  utter_ask_GRADE:
+  - text: In which grade are you looking to enroll?
+    buttons:
+    - title: 1st
+      payload: 1st
+    - title: 2nd
+      payload: 2nd
+    - title: 3rd
+      payload: 3rd
+    - title: 4th
+      payload: 4th
+    - title: 5th
+      payload: 5th
+    - title: 6th
+      payload: 6th
+    - title: 7th
+      payload: 7th
+    - title: 8th
+      payload: 8th
+    - title: 9th
+      payload: 9th
+    - title: 10th
+      payload: 10th
+  utter_ask_GENDER:
+  - text: what is applicants gender?
+    buttons:
+    - title: Male
+      payload: Male
+    - title: Female
+      payload: Female
+  utter_submit:
+  - text: Hey {name_get}  we have vacancies for {GRADE} grade. and the admission process
+      will start in January for more information you can visit our school?
+actions:
+- utter_greet
+- action_name
+- utter_conversation_end
+- utter_activites
+- utter_grade_school_offer
+- utter_co_ed
+- utter_teacher_ratio
+- utter_school_uniform_policy
+- utter_why_to_choose
+- action_default_fallback
+- utter_diverse_community
+- utter_parent_involvement
+- utter_success_preparation
+- utter_apply
+- utter_tution_fee
+- utter_dead_line
+- utter_financial_aid
+- utter_operational_hours
+- utter_partial_day
+- utter_meals
+- utter_operational_dates
+- utter_accomodation
+- utter_security
+- utter_enrollment_admission_period
+- utter_educational_level
+- utter_summer_program
+- utter_progess
+- utter_help_students_to_adjust
+- utter_culture
+- utter_choice
+- utter_internation_vs_internation
+- utter_admission_process_test
+- utter_school_financial_status
+- utter_cafeteria
+- utter_nonveg
+- utter_name_bot
+- utter_ask_age
+- utter_ask_GRADE
+- utter_ask_GENDER
+- utter_submit
+- utter_ask_phone
+- utter_ask_name_er
+- utter_praise
+- utter_ask_surname
+forms:
+- form_info
